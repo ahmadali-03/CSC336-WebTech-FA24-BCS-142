@@ -293,19 +293,14 @@
     </header>
 
     <!-- Main Product Section -->
-    <div class="container px-4 px-lg-5">
-      <div class="breadcrumb-text">
-        <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i>
-        <a href="#">Ready-to-wear</a> <i class="bi bi-chevron-right"></i>
-        <a href="#">Coats</a> <i class="bi bi-chevron-right"></i>
-        <span>Long coats</span>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-4 position-relative">
+    <!-- TASK 2: CSS GRID LAYOUT -->
+    <div class="container px-4 px-lg-5 mt-4">
+      <div class="product-layout-grid">
+        <!-- Area 1: Image -->
+        <div class="product-image-area position-relative">
           <div
             class="d-flex flex-column align-items-center position-absolute"
-            style="left: -30px; top: 200px"
+            style="left: -30px; top: 200px; z-index: 10"
           >
             <div class="bg-light border p-2 mb-3" style="cursor: pointer">
               <i class="bi bi-chevron-up"></i>
@@ -318,11 +313,12 @@
             src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=1000&auto=format&fit=crop"
             alt="The New York Coat"
             class="img-fluid w-100"
-            style="object-fit: cover; height: 80vh"
+            style="object-fit: cover; height: 100%"
           />
         </div>
 
-        <div class="col-md-5 offset-md-1">
+        <!-- Area 2: Details (Sticky) -->
+        <div class="product-details-sticky">
           <div class="product-info-box">
             <span class="new-badge">New</span>
             <h4>THE CURATED</h4>
@@ -358,71 +354,72 @@
             ></a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="quote-section">
-      <span class="quote-mark left">“</span>
-      Discover The New York coat by The Curated, a long double-breasted overcoat
-      cut for a clean, classic silhouette. A structured collar frames the
-      neckline, while a front buttoned closure keeps the line sharp. Flap
-      pockets add practical definition. Layer it over tailoring or knitwear for
-      effortless everyday polish.
-      <span class="quote-mark right">”</span>
-    </div>
-
-    <div class="container px-4 px-lg-5">
-      <div class="row details-section">
-        <div class="col-md-6 mb-4">
-          <div class="details-title">
-            <span>Details and care</span>
-            <i class="bi bi-chevron-up"></i>
+        <!-- Area 3: Description (Full width underneath) -->
+        <div class="product-description-area">
+          <div class="quote-section" style="padding: 40px 5%">
+            <span class="quote-mark left">“</span>
+            Discover The New York coat by The Curated, a long double-breasted
+            overcoat cut for a clean, classic silhouette. A structured collar
+            frames the neckline, while a front buttoned closure keeps the line
+            sharp. Flap pockets add practical definition. Layer it over
+            tailoring or knitwear for effortless everyday polish.
+            <span class="quote-mark right">”</span>
           </div>
-          <div class="details-content">
-            <p>
-              <strong>DESCRIPTION :</strong> Long, collar, notched collar,
-              long-sleeved, flap pockets, double-breasted, front buttoned
-              closure.
-            </p>
-            <p><strong>MATERIAL :</strong> 90% merino wool, 10% cashmere</p>
-            <p><strong>COLOR :</strong> Chocolate Melange</p>
-            <p>
-              <strong>SIZE & MEASUREMENTS :</strong> The model is 5ft 10in /
-              1.79m tall and wears a size M. Fits true to size, take your normal
-              size.<br />
-              <a href="#" style="color: #000; text-decoration: underline"
-                >View size guide</a
+
+          <div class="row details-section px-4">
+            <div class="col-md-6 mb-4">
+              <div class="details-title">
+                <span>Details and care</span>
+                <i class="bi bi-chevron-up"></i>
+              </div>
+              <div class="details-content">
+                <p>
+                  <strong>DESCRIPTION :</strong> Long, collar, notched collar,
+                  long-sleeved, flap pockets, double-breasted, front buttoned
+                  closure.
+                </p>
+                <p><strong>MATERIAL :</strong> 90% merino wool, 10% cashmere</p>
+                <p><strong>COLOR :</strong> Chocolate Melange</p>
+                <p>
+                  <strong>SIZE & MEASUREMENTS :</strong> The model is 5ft 10in /
+                  1.79m tall and wears a size M. Fits true to size, take your
+                  normal size.<br />
+                </p>
+                <p class="mt-4">Product code : CUR7U997BRW1T1AA00</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="details-title">
+                <span>Delivery and returns</span>
+                <i class="bi bi-chevron-up"></i>
+              </div>
+              <div class="details-content">
+                <p style="font-size: 12px; font-weight: bold; color: #888">
+                  EXPRESS TO HOME
+                </p>
+                <p>€25</p>
+                <br />
+                <p>
+                  Not for you?<br />Enjoy complimentary returns and at-home
+                  pickup within 30 days of purchase.
+                </p>
+                <br />
+                <p>
+                  <a href="#" style="color: #000; text-decoration: underline"
+                    >View returns terms and conditions for this item</a
+                  >
+                </p>
+              </div>
+              <div
+                class="details-title mt-4"
+                style="border-bottom: 1px solid #000"
               >
-            </p>
-            <p class="mt-4">Product code : CUR7U997BRW1T1AA00</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="details-title">
-            <span>Delivery and returns</span>
-            <i class="bi bi-chevron-up"></i>
-          </div>
-          <div class="details-content">
-            <p style="font-size: 12px; font-weight: bold; color: #888">
-              EXPRESS TO HOME
-            </p>
-            <p>€25</p>
-            <br />
-            <p>
-              Not for you?<br />Enjoy complimentary returns and at-home pickup
-              within 30 days of purchase.
-            </p>
-            <br />
-            <p>
-              <a href="#" style="color: #000; text-decoration: underline"
-                >View returns terms and conditions for this item</a
-              >
-            </p>
-          </div>
-          <div class="details-title mt-4" style="border-bottom: 1px solid #000">
-            <span>Why shop at 24S</span>
-            <i class="bi bi-chevron-down"></i>
+                <span>Why shop at 24S</span>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>

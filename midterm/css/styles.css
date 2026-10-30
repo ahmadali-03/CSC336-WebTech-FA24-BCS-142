@@ -807,3 +807,45 @@ body:has(#cat-coats:checked) .product:not([data-category="coats"]) {
 body:has(#cat-accessories:checked) .product:not([data-category="accessories"]) {
   display: none;
 }
+
+/* =========================================
+   TASK 2: CSS GRID & STICKY
+   ========================================= */
+.product-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "details"
+    "description";
+  gap: 30px;
+}
+
+.product-image-area {
+  grid-area: image;
+}
+
+.product-details-sticky {
+  grid-area: details;
+}
+
+.product-description-area {
+  grid-area: description;
+}
+
+/* Breakpoint BP = 642px */
+@media (min-width: 642px) {
+  .product-layout-grid {
+    grid-template-columns: 1fr 1fr; /* Side by side */
+    grid-template-areas:
+      "image details"
+      "description description"; /* Description full width underneath */
+    align-items: start;
+  }
+
+  /* Sticky Details Box */
+  .product-details-sticky {
+    position: sticky;
+    top: 72px; /* (N mod 40) + 70 = 72px */
+  }
+}
