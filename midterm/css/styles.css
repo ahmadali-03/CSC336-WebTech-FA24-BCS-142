@@ -765,3 +765,45 @@ footer ul a {
 .details-content strong {
   color: #000;
 }
+
+/* =========================================
+   TASK 1: CSS FILTER
+   ========================================= */
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-container input[type="radio"] {
+  display: none; /* Hide the radio circles */
+}
+
+.filter-container label {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Selected state using H = hsl(294, 70%, 45%) */
+.filter-container input[type="radio"]:checked + label {
+  background-color: hsl(294, 70%, 45%);
+  color: #fff;
+  border-color: hsl(294, 70%, 45%);
+}
+
+/* The Filter Magic using :has() */
+body:has(#cat-bags:checked) .product:not([data-category="bags"]) {
+  display: none;
+}
+body:has(#cat-coats:checked) .product:not([data-category="coats"]) {
+  display: none;
+}
+body:has(#cat-accessories:checked) .product:not([data-category="accessories"]) {
+  display: none;
+}

@@ -320,19 +320,36 @@
       </div>
     </div>
 
-    <!-- New Arrivals -->
-    <div class="container px-4 px-lg-5">
-      <div class="section-header">
-        <h2 class="section-title">
-          New Arrivals <span class="blue-dash">—</span>
-        </h2>
-        <a href="#" class="discover-link">Discover</a>
+    <!-- TASK 1: CSS FILTER -->
+    <div class="container px-4 px-lg-5 mt-4">
+      <!-- The Radio Buttons -->
+      <div class="filter-container">
+        <input type="radio" name="category" id="cat-all" checked />
+        <label for="cat-all">All</label>
+
+        <input type="radio" name="category" id="cat-bags" />
+        <label for="cat-bags">Bags</label>
+
+        <input type="radio" name="category" id="cat-coats" />
+        <label for="cat-coats">Coats</label>
+
+        <input type="radio" name="category" id="cat-accessories" />
+        <label for="cat-accessories">Accessories</label>
       </div>
-      <div class="row position-relative">
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container px-4 px-lg-5" id="productGridContainer">
+      <div class="row position-relative" id="productGrid">
         <div class="arrow-box d-none d-md-flex">&gt;</div>
 
         <!-- Product 1 (Bag) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product"
+          data-category="bags"
+          data-price="895"
+          data-name="mie crossbody bag"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -354,7 +371,12 @@
         </div>
 
         <!-- Product 2 (Coat) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product"
+          data-category="coats"
+          data-price="795"
+          data-name="the new york coat"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -376,7 +398,12 @@
         </div>
 
         <!-- Product 3 (Coat) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product"
+          data-category="coats"
+          data-price="720"
+          data-name="the classic coat"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -398,11 +425,16 @@
         </div>
 
         <!-- Product 4 (Coat) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product"
+          data-category="coats"
+          data-price="720"
+          data-name="the classic wool coat"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
-                src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop"
                 class="primary-img"
                 alt="Coat"
               />
@@ -414,42 +446,18 @@
             </div>
             <hr />
             <div class="product-brand">The Curated</div>
-            <div class="product-name">The Classic coat</div>
+            <div class="product-name">The Classic wool coat</div>
             <div class="product-price">€720</div>
           </a>
         </div>
-      </div>
-    </div>
-
-    <!-- Gift Banner -->
-    <div class="container-fluid px-0">
-      <div
-        class="promo-container"
-        style="
-          background-image: url(&quot;https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1600&auto=format&fit=crop&quot;);
-        "
-      >
-        <div class="white-box">
-          <h3>The time<br />for gifts</h3>
-          <p>Small thoughtful gestures<br />make for great<br />happiness.</p>
-          <a href="#">Shop</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Parisian Edit -->
-    <div class="container px-4 px-lg-5">
-      <div class="section-header">
-        <h2 class="section-title">
-          Parisian edit <span class="blue-dash">—</span>
-        </h2>
-        <a href="#" class="discover-link">Discover</a>
-      </div>
-      <div class="row position-relative">
-        <div class="arrow-box d-none d-md-flex">&gt;</div>
 
         <!-- Product 5 (Bag) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product mt-4"
+          data-category="bags"
+          data-price="1285"
+          data-name="croissant small bag"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -470,12 +478,17 @@
           </a>
         </div>
 
-        <!-- Product 6 (Skirt) -->
-        <div class="col-6 col-md-3 product">
+        <!-- Product 6 (Accessories) -->
+        <div
+          class="col-6 col-md-3 product mt-4"
+          data-category="accessories"
+          data-price="700"
+          data-name="fragola maxi skirt"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
-                src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crophttps://images.unsplash.com/photo-1577900232427-18219b9166a0?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1577900232427-18219b9166a0?q=80&w=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop"
                 class="primary-img"
                 alt="Skirt"
               />
@@ -493,7 +506,12 @@
         </div>
 
         <!-- Product 7 (Bag) -->
-        <div class="col-6 col-md-3 product">
+        <div
+          class="col-6 col-md-3 product mt-4"
+          data-category="bags"
+          data-price="4500"
+          data-name="neverfull mm"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -510,12 +528,17 @@
             <hr />
             <div class="product-brand">Louis Vuitton</div>
             <div class="product-name">Neverfull MM</div>
-            <div class="product-price">€2,100</div>
+            <div class="product-price">€4,500</div>
           </a>
         </div>
 
-        <!-- Product 8 (Scarf) -->
-        <div class="col-6 col-md-3 product">
+        <!-- Product 8 (Accessories) -->
+        <div
+          class="col-6 col-md-3 product mt-4"
+          data-category="accessories"
+          data-price="1100"
+          data-name="cloudy monogram shawl"
+        >
           <a href="product.html" style="text-decoration: none; color: black">
             <div class="image-wrapper">
               <img
@@ -534,6 +557,22 @@
             <div class="product-name">Cloudy Monogram Shawl</div>
             <div class="product-price">€1,100</div>
           </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gift Banner -->
+    <div class="container-fluid px-0">
+      <div
+        class="promo-container"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1600&auto=format&fit=crop&quot;);
+        "
+      >
+        <div class="white-box">
+          <h3>The time<br />for gifts</h3>
+          <p>Small thoughtful gestures<br />make for great<br />happiness.</p>
+          <a href="#">Shop</a>
         </div>
       </div>
     </div>
