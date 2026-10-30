@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24S Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      Get 15% off your first order. Code : 15FIRST |
+      <a href="#" style="color: white">Discover</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container-fluid px-4">
+        <div class="row header-top align-items-center">
+          <div class="col-5 d-flex align-items-center">
+            <button
+              class="navbar-toggler border-0 d-lg-none me-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              style="background: transparent; padding: 0"
+            >
+              <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="search-box d-lg-flex">
+              <i class="bi bi-search"></i>
+              <input
+                type="text"
+                placeholder="Search"
+                class="d-none d-lg-block ms-2"
+              />
+            </div>
+          </div>
+          <div class="col-2 text-center">
+            <a href="index.html" class="logo">24S</a>
+          </div>
+          <div class="col-5 d-flex justify-content-end align-items-center">
+            <div class="icons d-md-flex me-3">
+              <a href="#"><i class="bi bi-currency-euro"></i></a>
+              <a href="#"><i class="bi bi-person"></i></a>
+              <a href="#"><i class="bi bi-heart"></i></a>
+              <a href="#"><i class="bi bi-bag"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse d-lg-block" id="mainNav">
+          <ul class="nav-links list-unstyled">
+            <li class="nav-item">
+              <a href="#">The Gift Guide</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Gifts for Her</a
+                    ><a href="#" class="dropdown-item">Gifts for Him</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Under €100</a
+                    ><a href="#" class="dropdown-item">Under €200</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Luxury Gifts</a
+                    ><a href="#" class="dropdown-item">Beauty Gifts</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Gift Cards</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Designers</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">All brands</a
+                    ><a href="#" class="dropdown-item">New brands</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Chloé</a
+                    ><a href="#" class="dropdown-item">Dior</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Louis Vuitton</a
+                    ><a href="#" class="dropdown-item">Marni</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Prada</a
+                    ><a href="#" class="dropdown-item">The Row</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">New Arrivals</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">New Today</a
+                    ><a href="#" class="dropdown-item">New This Week</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">The Fall Edit</a
+                    ><a href="#" class="dropdown-item">Winter 2026</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Just Landed Bags</a
+                    ><a href="#" class="dropdown-item">New Shoes</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Shop All New</a
+                    ><a href="#" class="dropdown-item">Trending Now</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Ready-to-wear</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Coats & Jackets</a
+                    ><a href="#" class="dropdown-item">Dresses</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Knitwear</a
+                    ><a href="#" class="dropdown-item">Tops & Shirts</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Trousers & Jeans</a
+                    ><a href="#" class="dropdown-item">Skirts</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Suits</a
+                    ><a href="#" class="dropdown-item">Loungewear</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Shoes</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Boots</a
+                    ><a href="#" class="dropdown-item">Sneakers</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Heels</a
+                    ><a href="#" class="dropdown-item">Flats</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Sandals</a
+                    ><a href="#" class="dropdown-item">Mules</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Loafers</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Bags</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Shoulder Bags</a
+                    ><a href="#" class="dropdown-item">Tote Bags</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Crossbody Bags</a
+                    ><a href="#" class="dropdown-item">Clutches</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Mini Bags</a
+                    ><a href="#" class="dropdown-item">Backpacks</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Travel Bags</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Accessories</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Belts</a
+                    ><a href="#" class="dropdown-item">Hats & Gloves</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Scarves</a
+                    ><a href="#" class="dropdown-item">Sunglasses</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Wallets</a
+                    ><a href="#" class="dropdown-item">Tech Accessories</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Homeware</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Jewelry</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Fine Jewelry</a
+                    ><a href="#" class="dropdown-item">Fashion Jewelry</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Necklaces</a
+                    ><a href="#" class="dropdown-item">Earrings</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Rings</a
+                    ><a href="#" class="dropdown-item">Bracelets</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Watches</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Beauty</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Perfumes</a
+                    ><a href="#" class="dropdown-item">Makeup</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Skincare</a
+                    ><a href="#" class="dropdown-item">Haircare</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Bath & Body</a
+                    ><a href="#" class="dropdown-item">Candles</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Gift Sets</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Ultimates</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">The Iconic Bag</a
+                    ><a href="#" class="dropdown-item">The Classic Coat</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Fine Watches</a
+                    ><a href="#" class="dropdown-item">High Jewelry</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Rare Sneakers</a
+                    ><a href="#" class="dropdown-item">Vintage Finds</a>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <a href="#" class="dropdown-item">Collector's Items</a
+                    ><a href="#" class="dropdown-item">View All</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="sale-link">Sale</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1>The Dinner</h1>
+    </div>
+
+    <!-- Top Features -->
+    <div class="container px-4 px-lg-5">
+      <div class="row features">
+        <div class="col-md-4 col-12 mb-3 mb-md-0">
+          <i class="bi bi-truck"></i>
+          <p>Express delivery</p>
+        </div>
+        <div class="col-md-4 col-12 mb-3 mb-md-0">
+          <i class="bi bi-arrow-return-left"></i>
+          <p>Returns always free</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <i class="bi bi-headset"></i>
+          <p>Need help?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Arrivals -->
+    <div class="container px-4 px-lg-5">
+      <div class="section-header">
+        <h2 class="section-title">
+          New Arrivals <span class="blue-dash">—</span>
+        </h2>
+        <a href="#" class="discover-link">Discover</a>
+      </div>
+      <div class="row position-relative">
+        <div class="arrow-box d-none d-md-flex">&gt;</div>
+
+        <!-- Product 1 (Bag) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Bag"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Bag Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">Fane</div>
+            <div class="product-name">Mie crossbody bag</div>
+            <div class="product-price">€895</div>
+          </a>
+        </div>
+
+        <!-- Product 2 (Coat) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Coat"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Coat Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">The Curated</div>
+            <div class="product-name">The New York coat</div>
+            <div class="product-price">€795</div>
+          </a>
+        </div>
+
+        <!-- Product 3 (Coat) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Coat"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Coat Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">The Curated</div>
+            <div class="product-name">The Classic coat</div>
+            <div class="product-price">€720</div>
+          </a>
+        </div>
+
+        <!-- Product 4 (Coat) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Coat"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Coat Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">The Curated</div>
+            <div class="product-name">The Classic coat</div>
+            <div class="product-price">€720</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gift Banner -->
+    <div class="container-fluid px-0">
+      <div
+        class="promo-container"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1600&auto=format&fit=crop&quot;);
+        "
+      >
+        <div class="white-box">
+          <h3>The time<br />for gifts</h3>
+          <p>Small thoughtful gestures<br />make for great<br />happiness.</p>
+          <a href="#">Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parisian Edit -->
+    <div class="container px-4 px-lg-5">
+      <div class="section-header">
+        <h2 class="section-title">
+          Parisian edit <span class="blue-dash">—</span>
+        </h2>
+        <a href="#" class="discover-link">Discover</a>
+      </div>
+      <div class="row position-relative">
+        <div class="arrow-box d-none d-md-flex">&gt;</div>
+
+        <!-- Product 5 (Bag) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Bag"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Bag Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">Lemaire</div>
+            <div class="product-name">Croissant small bag</div>
+            <div class="product-price">€1,285</div>
+          </a>
+        </div>
+
+        <!-- Product 6 (Skirt) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crophttps://images.unsplash.com/photo-1577900232427-18219b9166a0?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1577900232427-18219b9166a0?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Skirt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Skirt Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">Molli</div>
+            <div class="product-name">Fragola pleated maxi skirt</div>
+            <div class="product-price">€700</div>
+          </a>
+        </div>
+
+        <!-- Product 7 (Bag) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Bag"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Bag Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">Louis Vuitton</div>
+            <div class="product-name">Neverfull MM</div>
+            <div class="product-price">€2,100</div>
+          </a>
+        </div>
+
+        <!-- Product 8 (Scarf) -->
+        <div class="col-6 col-md-3 product">
+          <a href="product.html" style="text-decoration: none; color: black">
+            <div class="image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=800&auto=format&fit=crop"
+                class="primary-img"
+                alt="Scarf"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop"
+                class="secondary-img"
+                alt="Scarf Alt"
+              />
+            </div>
+            <hr />
+            <div class="product-brand">Louis Vuitton</div>
+            <div class="product-name">Cloudy Monogram Shawl</div>
+            <div class="product-price">€1,100</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Afterwork Wear -->
+    <div class="container px-4 px-lg-5 mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="afterwork-box">
+            <h3>Afterwork-<br />wear</h3>
+            <p style="font-size: 14px; margin-top: 10px">
+              3 staples to take you<br />from the desk to drinks.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop"
+                alt="Jewelry"
+                style="width: 100%; height: 350px; object-fit: cover"
+              />
+              <p class="mt-2 mb-1">Statement jewelry</p>
+              <a href="#" class="text-dark" style="font-size: 13px">Discover</a>
+            </div>
+            <div class="col-4">
+              <img
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=600&auto=format&fit=crop"
+                alt="Perfumes"
+                style="width: 100%; height: 350px; object-fit: cover"
+              />
+              <p class="mt-2 mb-1">Elegant perfumes</p>
+              <a href="#" class="text-dark" style="font-size: 13px">Discover</a>
+            </div>
+            <div class="col-4">
+              <img
+                src="https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=600&auto=format&fit=crop"
+                alt="Bags"
+                style="width: 100%; height: 350px; object-fit: cover"
+              />
+              <p class="mt-2 mb-1">Shoulder bags</p>
+              <a href="#" class="text-dark" style="font-size: 13px">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Isabel Marant Banner -->
+    <div class="container-fluid px-0">
+      <div class="isabel-banner">
+        <div class="isabel-box">
+          <h3>Isabel<br />Marant Winter<br />2026</h3>
+          <p>The natural charm of the Parisian woman.</p>
+          <a href="#">Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Features & Newsletter Section -->
+    <div class="container px-4 px-lg-5">
+      <div class="row features top-border">
+        <div class="col-md-4 col-12 mb-3 mb-md-0">
+          <i class="bi bi-clock"></i>
+          <p>Express delivery</p>
+        </div>
+        <div class="col-md-4 col-12 mb-3 mb-md-0">
+          <i class="bi bi-arrow-return-left"></i>
+          <p>Returns always free</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <i class="bi bi-chat"></i>
+          <p>Need help?</p>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2 mb-5">
+        <div class="col-lg-6">
+          <div class="newsletter-box">
+            <h3>Newsletter</h3>
+            <p>
+              The best of 24S, delivered straight to your inbox: new arrivals,
+              exclusives, special offers, sales, latest trends...
+            </p>
+            <div class="newsletter-input-group">
+              <span><i class="bi bi-envelope"></i></span>
+              <input type="email" placeholder="email" />
+              <button type="button">Subscribe</button>
+            </div>
+            <div class="newsletter-disclaimer">
+              <div style="max-width: 90%">
+                24S is committed to respecting the privacy of each of its
+                customers. The personal data collected on this page is intended
+                for 24Sèvres to send communications about 24S offers for
+                managing its customer and commercial relations. By subscribing
+                to
+              </div>
+              <div class="d-flex flex-column">
+                <i class="bi bi-caret-up-fill"></i>
+                <i class="bi bi-caret-down-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="app-box">
+            <img
+              src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=300&auto=format&fit=crop"
+              alt="App Phone"
+              class="app-phone-img"
+            />
+            <div class="app-text-content">
+              <h2>
+                The best of fashion<br />
+                <em>at your fingertips</em><br />
+                with the 24S App.
+              </h2>
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.24s.com"
+                alt="QR Code"
+                class="qr-code-img"
+              />
+              <br />
+              <a href="#" class="app-store-btn mt-1">
+                <i class="bi bi-apple"></i>
+                <div>
+                  Download on the<br />
+                  <strong style="font-size: 14px">App Store</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container px-4 px-lg-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4 style="font-size: 24px; font-weight: bold; margin-bottom: 20px">
+              24S
+            </h4>
+            <p style="color: #555; line-height: 1.6">
+              24S is a proud member<br />of the luxury fashion group.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6>Customer service</h6>
+            <ul>
+              <li><a href="#">Shipping and Returns</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Personal Shopper</a></li>
+              <li><a href="#">V.I.C. Service</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6>Payment methods</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span style="font-size: 24px; color: #1a1f71"
+                ><i class="bi bi-credit-card-2-front"></i> VISA</span
+              >
+              <span style="font-size: 24px; color: #eb001b"
+                ><i class="bi bi-paypal"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6>24S</h6>
+            <ul>
+              <li><a href="#">Who are we?</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press & Partnerships</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-4">
+            <h6>Country/region, language</h6>
+            <div
+              style="
+                border: 1px solid #ddd;
+                padding: 10px;
+                display: inline-block;
+                margin-bottom: 20px;
+              "
+            >
+              <i class="bi bi-globe me-2"></i> English
+              <i class="bi bi-chevron-down ms-2"></i>
+            </div>
+            <h6 class="mt-3">Follow us</h6>
+            <div class="social-icons mt-2">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-4">
+          <div class="col-12">
+            <p style="color: #555; font-size: 13px">
+              Our brands : Celine - Chloe - Louis Vuitton - Dior - Max Mara -
+              Jacquemus - Loewe - McQueen...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">Legal notices - Cookies</div>
+    </footer>
+
+    <!-- Bootstrap JS (Only needed for the Mobile Hamburger Menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
