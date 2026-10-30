@@ -797,7 +797,7 @@ footer ul a {
   border-color: hsl(294, 70%, 45%);
 }
 
-/* The Filter Magic using :has() */
+/* The Filter using :has() */
 body:has(#cat-bags:checked) .product:not([data-category="bags"]) {
   display: none;
 }
@@ -839,7 +839,7 @@ body:has(#cat-accessories:checked) .product:not([data-category="accessories"]) {
     grid-template-columns: 1fr 1fr; /* Side by side */
     grid-template-areas:
       "image details"
-      "description description"; /* Description full width underneath */
+      "description description";
     align-items: start;
   }
 
